@@ -2,9 +2,54 @@
 <html>
 <head>
   <title>Even or Odd</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+      max-width: 500px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h2>Check Even or Odd</h2>
+  <h2>Even or Odd Checker</h2>
   <input id="nums" placeholder="e.g. 1,2,3,4">
   <button onclick="check()">Check</button>
   <p id="x"></p>
