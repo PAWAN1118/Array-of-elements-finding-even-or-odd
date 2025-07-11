@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even or Odd</title>
+</head>
+<body>
+  <h2>Check Even or Odd</h2>
+  <input id="nums" placeholder="e.g. 1,2,3,4">
+  <button onclick="check()">Check</button>
+  <p id="x"></p>
+
+  <script>
+    function isEven(n) {
+      return n % 2 === 0 ? "Even" : "Odd";
+    }
+
+    function check() {
+      let input = document.getElementById("nums").value;
+      let arr = input.split(',').map(Number);
+      let output = arr.map(n => n + " is " + isEven(n));
+      document.getElementById("x").innerText = output.join(', ');
+    }
+  </script>
+</body>
+</html>
